@@ -1,0 +1,37 @@
+A resistência elétrica nos circuitos das lâmpadas faz elas esquentarem após algum tempo ligadas.
+Com base nesse princípio físico, eu procederia a seguinte forma:
+
+Ligaria o primeiro interruptor durante 10 minutos. Depois desse tempo, ligaria o segundo interruptor
+por mais 10 minutos. Ao fim desse tempo iria conferir a temperatura da lâmpada da sala 1 e logo depois
+a temperatura da lâmpada da sala 2.
+
+Teoricamente, deverá existir a lâmpada quente (interruptor 2 que foi ligado por último), a lâmpada
+morna (interruptor 1 que foi ligado primeiro) e a lâmpada
+fria (interruptor 3 que não foi ligado).
+Em termos de código, o resultadoseguiria essa estrutura:
+
+if (lampadaSala1 === 'quente' && lampadaSala2 === 'morna') {
+    'o interruptor 2 liga a lâmpada da sala 1';
+    'o interruptor 1 liga a lâmpada da sala 2';
+    'o interruptor 3 liga a lâmpada da sala 3';
+} else if (lampadaSala1 === 'morna' && lampadaSala2 === 'quente') {
+    'o interruptor 1 liga a lâmpada da sala 1';
+    'o interruptor 2 liga a lâmpada da sala 2';
+    'o interruptor 3 liga a lâmpada da sala 3';
+} else if (lampadaSala1 === 'quente' && lampadaSala2 === 'frio') {
+    'o interruptor 2 liga a lâmpada da sala 1';
+    'o interruptor 3 liga a lâmpada da sala 2';
+    'o interruptor 1 liga a lâmpada da sala 3';
+} else if (lampadaSala1 === 'frio' && lampadaSala2 === 'quente') {
+    'o interruptor 3 liga a lâmpada da sala 1';
+    'o interruptor 2 liga a lâmpada da sala 2';
+    'o interruptor 1 liga a lâmpada da sala 3';
+} else if (lampadaSala1 === 'morno' && lampadaSala2 === 'frio') {
+    'o interruptor 1 liga a lâmpada da sala 1';
+    'o interruptor 3 liga a lâmpada da sala 2';
+    'o interruptor 2 liga a lâmpada da sala 3';
+} else if (lampadaSala1 === 'frio' && lampadaSala2 === 'morno') {
+    'o interruptor 3 liga a lâmpada da sala 1';
+    'o interruptor 1 liga a lâmpada da sala 2';
+    'o interruptor 2 liga a lâmpada da sala 3';
+}

@@ -1,0 +1,17 @@
+item a:
+o próximo número é o 9. Sequência de números ímpares.
+
+item b:
+o próximo número é o 128. Aqui, o número seguinte é sempre o dobro o anterior.
+
+item c:
+o próximo número é o 49. É o próximo número depois de 36 que possui uma raiz quadrada inteira (7)
+
+item d:
+O próximo número é o 100. Os números anteriores representam o quadrado dos números pares. O próximo número seria 10² que é igual a 100.
+
+item e:
+O próximo número é o 13, pois representa a soma dos dois números anteriores (8+5)
+
+item f:
+O próximo número é o 200, pois é o próximo número da sequência que começa com a letra D (essa levei um tempinho). 
